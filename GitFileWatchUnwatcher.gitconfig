@@ -1,0 +1,9 @@
+# Goes in your .git/config file
+[alias]
+  # Temporarily stop tracking a file in git. 
+  # usage: git unwatch path/to/file
+  unwatch = update-index --assume-unchanged
+  
+  # Resume tracking a file in git. 
+  # usage: git watch path/to/file
+  watch = update-index --no-assume-unchanged
